@@ -24,9 +24,9 @@ The following changes have been made in comparison to the standard Django applic
 * The Django ``ALLOWED_HOSTS`` setting has been set to allow external connections.
 * Add a Django handler for handling requests against the site.
 
-In addition, the following have been done to override the behaviour of the default S2I builder for Python.
+In addition, the ``.s2i/environment`` file has been created to allow environment variables to be set to override the behaviour of the default S2I builder for Python.
 
-* The ``.s2i/environment`` file has been added and ``DISABLE_MIGRATE`` set to disable automatic database migrations on deployments.
+* The environment variable ``DISABLE_MIGRATE`` has been set to disable automatic database migrations on deployments.
 
 ## Deployment Steps
 
